@@ -27,7 +27,7 @@ public class AutomateLoginTest {
     public void setup() throws MalformedURLException, UnexpectedException {
         DesiredCapabilities capabilities = new DesiredCapabilities().android();
 
-        capabilities.setCapability("avd","Pixel_XL_API_28");
+        capabilities.setCapability("avd","Samsung_Galaxy_S6");
         capabilities.setCapability("newCommandTimeout", 100);
         capabilities.setCapability("avdLaunchTimeout","900000");
         capabilities.setCapability("avdReadyTimeout","900000");
@@ -37,9 +37,7 @@ public class AutomateLoginTest {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", "9.0");
         capabilities.setCapability("automationName", "Espresso" );
-//        capabilities.setCapability("udid", "emulator-5556");
         capabilities.setCapability("autoGrantPermissions", true);
-//            capabilities.setCapability("chromedriverUseSystemExecutable", true);
         capabilities.setCapability("browserName", "");
         capabilities.setCapability("app",app);
         capabilities.setCapability("appPackage", "com.variablesmobile");
@@ -53,7 +51,7 @@ public class AutomateLoginTest {
         wait = new WebDriverWait(driver, 1000);
     }
 
-    @Test
+    @Test(groups="appium")
     public void logintesting() throws InterruptedException {
 
         //Switching context from NATIVE_APP to WEB_VIEW
