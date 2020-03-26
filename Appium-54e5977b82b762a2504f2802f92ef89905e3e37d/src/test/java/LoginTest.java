@@ -34,7 +34,7 @@ public class LoginTest {
     @BeforeMethod
     public void setup() throws MalformedURLException, UnexpectedException {
         DesiredCapabilities capabilities = new DesiredCapabilities().android();
-        capabilities.setCapability("deviceName","Pixel 3 XL API 28");
+        capabilities.setCapability("deviceName","Samsung_Galaxy_S10");
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", "7.0");
         capabilities.setCapability("udid", "emulator-5554");
