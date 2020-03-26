@@ -40,7 +40,6 @@ public class LoginTest {
         capabilities.setCapability("udid", "emulator-5554");
         capabilities.setCapability("autoGrantPermissions", true);
         capabilities.setCapability("showChromedriverLog", true);
-//        capabilities.setCapability("chromedriverUseSystemExecutable", true);
         capabilities.setCapability("browserName", "");
         capabilities.setCapability("app",app);
         capabilities.setCapability("appPackage", "com.variablesmobile");

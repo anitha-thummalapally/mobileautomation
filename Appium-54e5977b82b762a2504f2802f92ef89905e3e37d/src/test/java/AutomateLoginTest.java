@@ -37,9 +37,7 @@ public class AutomateLoginTest {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", "9.0");
         capabilities.setCapability("automationName", "Espresso" );
-//        capabilities.setCapability("udid", "emulator-5556");
         capabilities.setCapability("autoGrantPermissions", true);
-//            capabilities.setCapability("chromedriverUseSystemExecutable", true);
         capabilities.setCapability("browserName", "");
         capabilities.setCapability("app",app);
         capabilities.setCapability("appPackage", "com.variablesmobile");
