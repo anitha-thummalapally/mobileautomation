@@ -29,7 +29,7 @@ public class LoginTest {
     public AppiumDriver driver;
     public WebDriverWait wait;
 
-    public static final String app = "https://github.com/anitha-thummalapally/Apps/blob/master/VariablesAPK.apk?raw=true";
+    public static final String app = "https://github.com/anitha-thummalapally/Apps/blob/master/Variables_Mobile_Deployed.apk?raw=true";
 
     @BeforeMethod
     public void setup() throws MalformedURLException, UnexpectedException {
