@@ -34,12 +34,10 @@ public class LoginTest {
     @BeforeMethod
     public void setup() throws MalformedURLException, UnexpectedException {
         DesiredCapabilities capabilities = new DesiredCapabilities().android();
-        capabilities.setCapability("deviceName","Samsung Galaxy S6");
+        capabilities.setCapability("deviceName","Pixel_3_XL_API_28");
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", "7.0");
         capabilities.setCapability("udid", "emulator-5554");
-        capabilities.setCapability("remoteAdbHost","localhost");
-        capabilities.setCapability("adbPort","5037");
         capabilities.setCapability("autoGrantPermissions", true);
         capabilities.setCapability("showChromedriverLog", true);
         capabilities.setCapability("browserName", "");
